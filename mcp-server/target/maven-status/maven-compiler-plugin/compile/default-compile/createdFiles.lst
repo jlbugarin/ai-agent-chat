@@ -1,0 +1,4 @@
+com\consultorjava\mcp\client\GeocodingClient.class
+com\consultorjava\mcp\client\WeatherClient.class
+com\consultorjava\mcp\client\GitHubClient.class
+com\consultorjava\mcp\ExternalApiTools.class
