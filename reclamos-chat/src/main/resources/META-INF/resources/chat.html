@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buga · Asistente de Reclamos</title>
+    <link rel="stylesheet" href="chat.css">
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">Buga</span>
+            <span class="brand-sub">Banca digital</span>
+        </div>
+        <div class="topbar-meta">Asistente de reclamos</div>
+    </header>
+
+    <main class="layout">
+        <aside class="sidebar">
+            <h2>Cómo te puedo ayudar</h2>
+            <ul class="hints">
+                <li>Registrar un nuevo reclamo</li>
+                <li>Consultar el estado de tu reclamo</li>
+                <li>Listar tus reclamos por DNI</li>
+            </ul>
+            <p class="disclaimer">
+                Por seguridad, nunca te pediremos contraseñas, claves de internet,
+                claves de tarjeta ni códigos OTP.
+            </p>
+        </aside>
+
+        <section class="chat">
+            <div class="messages" id="messages" aria-live="polite"></div>
+            <form class="composer" id="composer" autocomplete="off">
+                <textarea id="input" rows="2"
+                          placeholder="Escribe tu mensaje... (Enter para enviar, Shift+Enter para salto de línea)"
+                          required></textarea>
+                <button type="submit" id="send">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="chat.js"></script>
+</body>
+</html>
